@@ -1,2 +1,2 @@
 # Afrihomes
-A property management system to help landlords find properties to buy and improve
+A property management system to match sellers of low cost properties with buyers looking to acquire, improve and get future returns
