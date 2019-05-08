@@ -96,8 +96,8 @@
 	<!-- property buyer/seller section -->
 	<section id="signup">
 		<div class="row">
-			<!-- ----------- -->
 
+			<!-- ----------- -->
 			<div class="col-md-6" style="background-color: #132d46">
 				<!-- Main content -->
 				<div id="main_content" class="d-lg-flex align-items-center " style="min-height: 50vh">
@@ -105,11 +105,37 @@
 						<h3 style="color: white; font-weight: bold">Are you a property buyer?</h3>
 						<p class="lead" style="font-size: 1em; color: white;">we match you with willing sellers ready to sell a property</p>
 						<div class="pt-4" style="color: white">
-							<a href="#" class=" btn btn-success" style="font-weight: bold">ACQUIRE PROPERTY</a>
+							<a href="#" class=" btn btn-success" data-toggle="modal" data-target="#acquireproperty" style="font-weight: bold">ACQUIRE PROPERTY</a>
 						</div>
 					</div>
 				</div>
 				<!-- End of main content -->
+
+				<!-- Modal for acquire property -->
+				<div class="modal fade" id="acquireproperty" tabindex="-1" role="dialog" aria-labelledby="acquireproperty" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="buyertitle"><strong>Buyer</strong> (looking to acquire a property) </h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <!--typeform integration -->
+
+				        <div class="typeform-widget" data-url="https://kefa.typeform.com/to/GtVHON" data-transparency="85" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> Africonproperty</div>
+
+				        <!--end of typeform integration -->
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- End of modal for acquire property -->
+
 			</div>
 			<!-- ------------ -->
 
@@ -121,12 +147,38 @@
 						<h3 style="font-weight: bold; color: #132d46">Are you looking to sell a property?</h3>
 						<p class="lead" style="font-size: 1em;">we match you with investors/buyers looking to acquire properties</p>
 						<div class="pt-4">
-							<a href="#" class="btn btn-warning" style="font-weight: bold"> SELL A PROPERTY</a>
+							<a href="#" class="btn btn-warning" data-toggle="modal" data-target="#sellproperty" style="font-weight: bold"> SELL A PROPERTY</a>
 						</div>
 						
 					</div>
 				</div>
 				<!-- End of main content -->
+
+				<!-- Modal to sell a property -->
+				<div class="modal fade" id="sellproperty" tabindex="-1" role="dialog" aria-labelledby="sellproperty" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="buyertitle"><strong>Seller</strong> (looking to sell a property) </h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <!--Typeform integration for sellers form  -->
+
+				        <div class="typeform-widget" data-url="https://kefa.typeform.com/to/Hq5DBh" data-transparency="88" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> Africonproperty </div>
+
+				        <!--End of Typeform integration for sellers form -->
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- End of modal to sell a property -->
+
 			</div>
 			<!-- ----------- -->
 		
@@ -154,7 +206,7 @@
 					<div class="card shadow rounded ">
 						<!-- <img class="card-img-top img-fluid pt-4 mx-auto d-block" src="images/cityscape.svg" alt="Industrial svg" style="height: 25%; width: 25%;"> -->
 					  	<div class="card-body text-center">
-					    	<h5 class="card-title"><strong> BUYER </strong></h5>
+					    	<h5 class="card-title" style="color: #32325d"><strong> BUYER </strong></h5>
 					    	<p class="card-text">For individuals/companies looking to acquire a viable property as an investment.</p>
 					    	<div class="card-header mt-2" style="font-weight:600; font-size: 1.2em; letter-spacing: .05em;"></div>
 					    	<ul class="list-group list-group-flush text-left">
@@ -174,7 +226,7 @@
 					<div class="card shadow rounded ">
 						<!-- <img class="card-img-top img-fluid pt-4 mx-auto d-block" src="images/cityscape.svg" alt="Industrial svg" style="height: 25%; width: 25%;"> -->
 					  	<div class="card-body text-center">
-					    	<h5 class="card-title" ><strong> SELLER </strong></h5>
+					    	<h5 class="card-title" style="color: #32325d"><strong> SELLER </strong></h5>
 					    	<p class="card-text">For property owners looking to offset a property, we match you with buyers/Investors.</p>
 					    	<div class="card-header mt-2" style="font-weight:600; font-size: 1.2em; letter-spacing: .05em;"></div>
 					    	<ul class="list-group list-group-flush text-left">
@@ -194,7 +246,33 @@
 				<p class="mt-4" style="font-size: 1.5em"><strong>Are you interested in receiving updates and discovering more?</strong></p>
 
 				<div class="pb-5">
-					<a href="#" class="btn btn-success p-3" style="font-weight: 600; box-shadow: .5em .5em .5em .2em grey">SIGN UP HERE TO RECEIVE UPDATES</a>
+					<a href="#" role="button" class="btn btn-success p-3" data-toggle="modal" data-target="#exampleModalCenter" style="font-weight: 600; box-shadow: .5em .5em .5em .2em grey" >SIGN UP HERE TO RECEIVE UPDATES</a>
+					
+					<!-- Modal for subscription -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLongTitle">Sign up to receive updates</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<!-- Typeform integration for subscription -->
+
+					        <div class="typeform-widget" data-url="https://kefa.typeform.com/to/qeGZk8" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 200px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> Africonproperty </div>
+
+					        <!-- Typeform integration for subscription -->
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- End of modal for subscription -->
+
 				</div>
 		
 			</div>
@@ -203,7 +281,7 @@
 	<!-- end of About section -->
 
 
-	<!-- Loan package section -->
+	<!-- Our process section -->
 	<section style="background: #121221; color: white; height: auto;" class="d-flex mb-0">
 		<div class="container mt-5 mb-5">
 			<h2 align="center" style="font-weight: 600; font-size: 2.1875rem">Our process</h2>
@@ -212,7 +290,7 @@
 				<div class="col-md-3" align="center">
 					<div class="card mb-4 p-2" style="border-style: none; text-align: center; background: #F1F5F6; min-height: 50vh" align="center">
 					  	<div class="card-body">
-					    	<img src="./images/repair2.svg" style="height: 10vh">
+					    	<img src="./images/agreement.svg" style="height: 10vh">
 					    	<h4 class="card-subtitle mb-2 mt-2" style="color: #15232B;">Sellers</h4>
 					    	<p class="card-subtitle mb-2 text-muted mt-2 container" style="font-size: 1.0625rem;">We identify willing sellers of commercial low cost properties in Kenya and we place a bid based on our calculated valuation </p>
 					  	</div>
@@ -221,7 +299,7 @@
 				<div class="col-md-3">
 					<div class="card mb-4" style="border-style: none; text-align: center; background: #F1F5F6; min-height: 50vh" align="center">
 					  	<div class="card-body">
-					    	<img src="./images/plumbing.svg" style="height: 10vh">
+					    	<img src="./images/agreement.svg" style="height: 10vh">
 					    	<h4 class="card-subtitle mb-2 mt-2" style="color: #15232B;">Due diligence </h4>
 					    	<p class="card-subtitle mb-2 text-muted mt-2 container" style="font-size: 1.0625rem;">Upon agreement of the price, we proceed to carry out due diligence of the property and the documentation provided  </p>
 					  	</div>
@@ -230,7 +308,7 @@
 				<div class="col-md-3">
 					<div class="card mb-4" style="border-style: none; text-align: center; background: #F1F5F6; min-height: 50vh" align="center">
 					  	<div class="card-body">
-					    	<img src="./images/home-solar.svg" style="height: 10vh">
+					    	<img src="./images/agreement.svg" style="height: 10vh">
 					    	<h4 class="card-subtitle mb-2 mt-2" style="color: #121221;">Buyers</h4>
 					    	<p class="card-subtitle mb-2 text-muted mt-2 container" style="font-size: 1.0625rem;">We match the sellers with buyers and investors willing to put up funds to purchase the property. Money is put in an escrow service until the client has approved the purchase</p>
 					  	</div>
@@ -239,7 +317,7 @@
 				<div class="col-md-3">
 					<div class="card mb-4" style="border-style: none; text-align: center; background: #F1F5F6; min-height: 50vh" align="center">
 					  	<div class="card-body">
-					    	<img src="./images/home-solar.svg" style="height: 10vh">
+					    	<img src="./images/agreement.svg" style="height: 10vh">
 					    	<h4 class="card-subtitle mb-2 mt-2" style="color: #121221;">Deal</h4>
 					    	<p class="card-subtitle mb-2 text-muted mt-2 container" style="font-size: 1.0625rem;">Once everything has checked out well, we facilitate transfer of the property and disbursement of payments through the platform and close the deal</p>
 					  	</div>
@@ -251,7 +329,7 @@
 		</div>
 
 	</section>
-	<!-- End of our Loan packages section -->
+	<!-- End of our process section -->
 
 	<!-- Contact page section -->
 	<section class="row justify-content-center" style="background-color: #15232B/*#121221*/; color: white">
@@ -262,7 +340,7 @@
 			<div class="card mb-4 mt-4" style="border-style: none; text-align: center; background: #F1F5F6;" align="center">
 				<div class="card-body">
 				<!-- Typeform Contact page embeded-->
-					<div class="typeform-widget" data-url="https://kefa.typeform.com/to/rlJiwH" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=rlJiwH&utm_source=typeform.com-1106416-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> 
+					<div class="typeform-widget" data-url="https://kefa.typeform.com/to/rlJiwH" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> .. <a href="https://admin.typeform.com/signup?utm_campaign=rlJiwH&utm_source=typeform.com-1106416-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Africonproperty</a> 
 					</div>
 				<!-- End of Typeform contact page -->
 				</div>
