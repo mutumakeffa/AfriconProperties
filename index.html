@@ -96,7 +96,7 @@
 
 							<div class="pt-4">
 								<a href="#signup" class="btn btn-success p-2 pr-4 pl-4" style="font-weight: 600; box-shadow: .3rem .3rem .1rem .1rem rgba(0,0,0,0.5); background-color: #da552f; border-color: #da552f;">SIGN UP HERE</a>
-								<a href="#about" class="btn btn-outline-secondary p-2 pr-3 pl-3 ml-3 " style="border-color: white; color: white; font-weight: 600; box-shadow: .2rem .2rem .1rem .1rem rgba(0,0,0,0.5);">LEARN MORE </a> 
+								<a href="#about" id="btn_learn" class="btn btn-outline-secondary p-2 pr-3 pl-3" style="border-color: white; color: white; font-weight: 600; box-shadow: .2rem .2rem .1rem .1rem rgba(0,0,0,0.5); margin-left: .8rem">LEARN MORE </a> 
 							</div>
 						</div>
 					</div>
@@ -399,10 +399,18 @@
 
 		/*most mobile devices on potrait mode*/
 		@media (min-width: 320px) and (max-width: 480px) {
-  			#main_content{
+  			#main_content, h3{
   				padding: 80px 0 100px;
+  				font-size: .8rem
+
+
   			}
-  
+
+  			.btn{
+  				margin-bottom: 1.5rem;
+  				width: 100%;
+
+  			}
 		}
 
 		@media (min-width: 1024px) {
